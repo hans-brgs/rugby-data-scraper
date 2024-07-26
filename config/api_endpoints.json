@@ -1,0 +1,92 @@
+{
+  "API" : {
+    "core_api_base": "http://sports.core.api.espn.com/v2/sports/rugby/",
+    "core_endpoints" : {
+      "league_urls": {
+        "url" : "leagues",
+        "params" : {
+          "limit": "{limit}"
+        }
+      },
+      "league_info": {
+        "url" : "leagues/{id_league}",
+        "params" : {}
+      },
+      "league_season_urls": {
+        "url" : "leagues/{id_league}/seasons",
+        "params" : {
+          "limit": "{limit}"
+        }
+      },
+      "league_season_info": {
+        "url" : "leagues/{id_league}/seasons/{season}",
+        "params" : {}
+      },
+      "team_urls": {
+        "url" : "leagues/{id_league}/seasons/{season}/teams",
+        "params" : {
+          "limit": "{limit}"
+        }
+      },
+      "team_info": {
+        "url" : "teams/{id_team}",
+        "params" : {}
+      },
+      "group_urls": {
+        "url" : "leagues/{id_league}/seasons/{season}/types/1/groups",
+        "params" : {}
+      },
+      "teams_standing": {
+        "url" : "leagues/{id_league}/seasons/{season}/types/1/groups/{id_group}/standings/0",
+        "params" : {}
+      },
+      "team_standing": {
+        "url" : "leagues/{id_league}/seasons/{season}/types/1/teams/{id_team}/record",
+        "params" : {}
+      },
+      "league_calendar_by_season": {
+        "url" : "leagues/{id_league}/seasons/{season}/types/1/calendar/whitelist",
+        "params" : {}
+      },
+      "events_url_by_dates": {
+        "url" : "leagues/{id_league}/events",
+        "params" : {
+          "seasontypes": "{type}",
+          "dates": "{dates}",
+          "limit": "{limit}"
+        }
+      },
+      "events_url_by_season_and_team": {
+        "url" : "leagues/{id_league}/seasons/{season}/teams/{id_team}/events",
+        "params" : {
+          "limit": "{limit}"
+        }
+      },
+      "events_url_by_season_and_group": {
+        "url" : "leagues/{id_league}/seasons/{season}/types/1/groups/{id_group}/events",
+        "params" : {
+          "limit": "{limit}"
+        }
+      },
+      "team_stats_by_match": {
+        "url" : "leagues/{id_league}/events/{id_match}/competitions/{id_match}/competitors/{id_team}/statistics",
+        "params" : {}
+      },
+      "player_stats_by_competition_season": {
+        "url" : "leagues/{id_league}/seasons/{season}/types/1/teams/{id_team}/athletes/{id_athlete}/statistics",
+        "params" : {}
+      },
+      "players_url_by_season_and_team": {
+        "url" : "leagues/{id_league}/seasons/{season}/teams/{id_team}/athletes",
+        "params" : {
+          "limit": "{limit}"
+        }
+      },
+        "players_info_by_team_and_event": {
+        "url" : "leagues/{id_league}/events/{id_match}/competitions/{id_match}/competitors/{id_team}/roster",
+        "params" : {}
+      }
+    }
+  }
+}
+
