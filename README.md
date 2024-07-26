@@ -14,9 +14,9 @@ The project aims to retrieve complete match statistics for each league (e.g. Top
   * Match datas and statistics by league and season
   * player datas and statistics for each match
 
-For a detailed breakdown of the data structure, including tables, fields, and relationships, please refer to the dedicated [markdown document](database/DATABASE_DOCUMENTATION.md). This document provides comprehensive information on how the data is organized and can be utilized for various analytical purposes.
+For a detailed breakdown of the data structure, including tables, fields, and relationships, please refer to the dedicated [markdown document](database/README.md). This document provides comprehensive information on how the data is organized and can be utilized for various analytical purposes.
 
-For a comprehensive overview of all statistical fields collected for standings, matches and players, please refer to our [Data Dictionary](/DICTIONARY.md).
+For a comprehensive overview of all statistical fields collected for standings, matches and players, please refer to our [Data Dictionary](dictionary/README.md).
 
 ![header](/header.png)
 
@@ -72,7 +72,7 @@ For a comprehensive overview of all statistical fields collected for standings, 
    ```
    The script in this folder will create the necessary database and tables. Make sure to have your MariaDB/MySQL root password ready.
 
-   You'll find the database schema in the [SQL script file](database/create_tables.sql) and complementary information on db architecture in the [documentation file](database/DATABASE_DOCUMENTATION.md).
+   You'll find the database schema in the [SQL script file](database/create_tables.sql) and complementary information on db architecture in the [documentation file](database/README.md).
 
    **Before running the setup script, you need to update the configuration variables:**
    * For Windows:
