@@ -1,7 +1,7 @@
 
 # ESPN Rugby Data Scraper and ETL Pipeline
 
-This Python project is designed to create a comprehensive rugby database by extracting, transforming, and loading (ETL) data from ESPN's hidden API.
+This Python project is designed to create a comprehensive rugby database (stored locally with MariaDB) by extracting, transforming, and loading (ETL), data from ESPN's hidden API.
 
 The project aims to retrieve complete match statistics for each league (e.g. Top 14) and season, as well as player statistics per season and per match. This extensive data collection is specifically tailored to support analysis and research by sports data scientists.
 

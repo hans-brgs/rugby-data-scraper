@@ -2,10 +2,10 @@
 setlocal EnableDelayedExpansion
 
 :: Variables
-set "DB_NAME=rugby_db"
-set "DB_USER=admin"
-set "DB_PASS=admin"
-set "MariaDB_PASS=unmade-unmoral-latch"
+set "DB_NAME=MY_DATABASE_NAME"
+set "DB_USER=MY_USER_NAME"
+set "DB_PASS=MY_DATABASE_PASSWORD"
+set "MariaDB_PASS=MARIADB_PASSWORD"
 set "MariaDB_PATH=C:\Program Files\MariaDB 11.5\bin\"
 set "MariaDB_SCRIPT_FILE=create_tables.sql"
 
