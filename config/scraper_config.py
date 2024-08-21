@@ -25,7 +25,9 @@ def select_league():
         clear()
         if  0 <= league_input < len(leagues_id):
             espn_league_id = list(leagues_id.values())[league_input]
-            break
+            input_validation = input(f"You have selected the league: {list(leagues_id.keys())[league_input]} (Y/N) ?\n")
+            if input_validation in ["y","Y"] :
+                break
         else:
             print(
                 f"Invalid entry. Please select an index between 0 and {len(leagues_id)-1}."
@@ -65,6 +67,9 @@ def select_season(espn_league_id):
         clear()
         if 0 <= year_input < len(seasons_year):
             year = seasons_year[year_input]
+            input_validation = input(f"You have selected the year: {year} (Y/N) ?\n")
+            if input_validation in ["y","Y"] :
+                break
             break
         else:
             print(
